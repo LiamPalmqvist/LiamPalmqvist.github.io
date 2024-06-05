@@ -1,0 +1,42 @@
+:root 
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body 
+{
+    height: 100%;
+    margin: 0;
+}
+
+body 
+{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+body .row
+{
+    border: 1px dotted gray;
+}
+
+body header.row
+{
+    flex: 0 1 auto;
+    /* the above stands for
+    flex-grow: 0,
+    flex-shrink: 1,
+    flex-basis: auto
+    */
+}
+
+body section.row
+{
+    flex: 1 1 auto;
+}
+
+body footer.row
+{
+    flex: 0 1 40px;
+}

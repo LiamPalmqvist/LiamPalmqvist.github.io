@@ -1,0 +1,34 @@
+:root 
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body 
+{
+    height: 100%;
+    margin: 0;
+}
+
+body 
+{
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes spin
+{
+    from {rotate: 0deg;}
+    to {rotate: 720deg;}
+}
+
+.image
+{
+    width: 45vw;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
