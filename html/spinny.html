@@ -5,16 +5,16 @@
     <meta charset="utf-8"><!--character encoding for the document (Unicode) -->
     <title>Slyce Games</title><!--web page title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/spinny.css"><!--linked css file-->
-    <link rel="stylesheet" href="css/fonts.css"><!--linked font definition css file-->
+    <link rel="stylesheet" href="../css/spinny.css"><!--linked css file-->
+    <link rel="stylesheet" href="../css/fonts.css"><!--linked font definition css file-->
     <link rel="stylesheet" href="https://use.typekit.net/dal5sha.css">
 
     <!--Favicon stuff-->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d55b5b">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#d55b5b">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!----------------->
@@ -25,18 +25,31 @@
 <body>
 
     <header class="row">
-        <p><b>header</b>
-        <br />
-        <br />(sized to content)</p>
-        </header>
+        <div class="logoDiv">
+            <image class="logoIcon" src="../images/PFP.jpg"/>
+        </div>
+
+        <div class="navDiv">
+            <a href="../index.html">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>   
+        </div>
+    </header>
+
     <section class="row">
         <p>
         <b>content</b>
         (fills remaining space)
         </p>
     </section>
+
     <footer class="row">
         <p><b>footer</b> (fixed height)</p>
     </footer>
 
 </body>
+
+<footer>
+    <!--Load the script after the page has loaded so not to cause lag-->
+    <script src="../js/spinny.js"></script>
+</footer>
