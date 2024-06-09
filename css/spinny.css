@@ -1,7 +1,12 @@
 :root 
 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
+
+/*==================================
+This is what controls the page's layout.
+DO NOT CHANGE
+==================================*/
 
 html, body 
 {
@@ -16,13 +21,9 @@ body
     height: 100%;
 }
 
-body .row
-{
-    border: 1px dotted gray;
-}
-
 body header.row
 {
+    background-color: black;
     display: inline-flex;
     flex: 0 1 auto;
     /* the above stands for
@@ -33,6 +34,31 @@ body header.row
     align-items: center;
 }
 
+body section.row
+{
+    flex: 1 1 auto;
+}
+
+body section.mainContent
+{
+    width: 80%;
+    align-self: center;
+}
+
+body footer.row
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    flex: 0 1 40px;
+}
+
+/*==================================
+====================================
+==================================*/
+
 .logoDiv
 {
     padding: 10px;
@@ -41,7 +67,8 @@ body header.row
 
 .logoIcon
 {
-    width: 100px;    
+    width: 50px; 
+    margin-left: 90px;   
 }
 
 .navDiv
@@ -50,14 +77,56 @@ body header.row
     display: inline-flex;
     justify-content: space-evenly;
     text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body section.row
+/* This is for the links on the page */
+
+.navDiv a
 {
-    flex: 1 1 auto;
+    text-decoration: none;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
-body footer.row
+.navDiv a:link
 {
-    flex: 0 1 40px;
+    color: #cac8d0;
+}
+
+.navDiv a:visited
+{
+    color: #cac8d0;
+}
+
+.navDiv a:hover
+{
+    color: white;
+}
+
+/* ================================== */
+
+/* This defines the main content of the page */
+
+section.row
+{
+    display: flex;
+}
+
+section.row div
+{
+    height: 100%;
+    width: 50%;
+}
+
+/* ===========================================*/
+
+section.post, .imagePost
+{
+    width: 90%;
+    margin: 5%;
 }

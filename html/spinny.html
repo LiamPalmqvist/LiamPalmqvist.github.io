@@ -6,7 +6,9 @@
     <title>Slyce Games</title><!--web page title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/spinny.css"><!--linked css file-->
-    <link rel="stylesheet" href="../css/fonts.css"><!--linked font definition css file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"><!--linked font definition css file-->
     <link rel="stylesheet" href="https://use.typekit.net/dal5sha.css">
 
     <!--Favicon stuff-->
@@ -24,27 +26,66 @@
 
 <body>
 
+    <!-- HEADER -->
+
     <header class="row">
         <div class="logoDiv">
             <image class="logoIcon" src="../images/PFP.jpg"/>
         </div>
 
         <div class="navDiv">
-            <a href="../index.html">Home</a>
-            <a href="">About us</a>
-            <a href="">Contact us</a>   
+            <h1><a href="">News & Updates</a></h1>
+            <h1><a href="">About us</a></h1>
+            <h1><a href="">Contact us</a></h1>
         </div>
     </header>
 
-    <section class="row">
-        <p>
-        <b>content</b>
-        (fills remaining space)
-        </p>
+    <!-- HEADER END HERE -->
+
+    <!-- MAIN CONTENT OF THE PAGE -->
+
+    <section class="mainContent">
+
+        <section class="row">
+            
+            <div>
+                <section class="post">
+                    <h2><time datetime="2024-06-9">June 6th 2024</time></h2>
+                    <h1>Finally getting started with the development of our first game!</h1>
+                    <p>Over the last few months we spent a lot of time trying to figure out what sort of game we wanted
+                        to make first. After a lot of planning and deliberation we finally settled on a genre, setting
+                        and storyline we liked!<br><br>Check YouTube for a trailer in the future!
+                    </p>
+                </section>
+            </div>
+
+            <div class="column1">
+                <image class="imagePost" src="../images/PFP.jpg"></image>
+            </div>
+        </section>
+
+        <section class="row">
+
+            <div class="column1">
+                <image class="imagePost" src="../images/PFP.jpg"></image>
+            </div>
+            
+            <div>
+                <section class="post">
+                    <h2><time datetime="2023-10-31">October 31st 2023</time></h2>
+                    <h1>Our company, Slyce Games, finally became a reality!</h1>
+                    <p>Started by a couple of University students in Brighton, we aim to create games that people can truly enjoy.</p>
+                </section>
+            </div>
+
+        </section>
+
     </section>
 
+    <!-- MAIN CONTENT ENDS HERE -->
+
     <footer class="row">
-        <p><b>footer</b> (fixed height)</p>
+        <span>© Slyce Games LTD. 2024</span>
     </footer>
 
 </body>
@@ -53,3 +94,5 @@
     <!--Load the script after the page has loaded so not to cause lag-->
     <script src="../js/spinny.js"></script>
 </footer>
+
+</html>
