@@ -64,6 +64,10 @@ window.addEventListener("click", function()
         console.log(mainContent[i].firstChild.nextElementSibling);
     }*/
     console.log(window.mobileCheck());
+<<<<<<< HEAD
     //this.alert(window.mobileCheck());
 });
+=======
+})
+>>>>>>> 4f374c833310a58e7b306fbd094a03727fb8d0b8
 
