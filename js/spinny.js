@@ -64,10 +64,4 @@ window.addEventListener("click", function()
         console.log(mainContent[i].firstChild.nextElementSibling);
     }*/
     console.log(window.mobileCheck());
-<<<<<<<<< Temporary merge branch 1
-})
-=========
-    //this.alert(window.mobileCheck());
 });
->>>>>>>>> Temporary merge branch 2
-
