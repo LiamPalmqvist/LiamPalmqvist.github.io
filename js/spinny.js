@@ -1,4 +1,5 @@
-var logoDiv, mainContent, postElements;
+var logoDiv, mainContent, postElements; 
+const isMobile = navigator.userAgentData.mobile; //resolves true/false;
 
 window.addEventListener("load", function() 
 {
@@ -11,7 +12,7 @@ window.addEventListener("load", function()
 
 window.addEventListener("resize", function()
 {
-    if (this.window.innerWidth <= 750)
+    if (this.window.innerWidth <= 750 || isMobile)
     {
         logoDiv.style.display = "none";
         for (var i = 0; i < mainContent.length; i++)
@@ -30,7 +31,7 @@ window.addEventListener("resize", function()
             }
         }
     }   
-    else if (this.window.innerWidth > 750)
+    else if (this.window.outerWidth > 750 && !isMobile)
     {
         logoDiv.style.display = "block";
         for (var i = 0; i < mainContent.length; i++)
